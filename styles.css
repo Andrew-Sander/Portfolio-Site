@@ -25,7 +25,7 @@ main {
     top: 80px;
 }
 .socials {
-    text-decoration: none;
-    color: black;
+    max-height: 30px;
     padding-right: 10px;
+    float: right;
 }
