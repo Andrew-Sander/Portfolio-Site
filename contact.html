@@ -40,7 +40,7 @@
                     <h1 class="pb-1">Andrew</h1>
                     <p class="pb-1 lh-lg">403-808-1082<br><a href="mailto:andrsand1@gmail.com" style="text-decoration: none; color: black;">andrsand1@gmail.com</a></p>
                     <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Send me a message</button> 
-                    <a href="" ><img src="images/LI-In-Bug.png" alt="LinkedIn logo" class="socials"></a><a href="https://github.com/Andrew-Sander" ><img src="images/github-mark.png" alt="GitHub logo" class="socials"></a>
+                    <a href="" target="_blank"><img src="images/LI-In-Bug.png" alt="LinkedIn logo" class="socials"></a><a href="https://github.com/Andrew-Sander" target="_blank"><img src="images/github-mark.png" alt="GitHub logo" class="socials"></a>
         
                     <div class="modal" id="myModal">
                         <div class="modal-dialog">
@@ -52,13 +52,15 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <form action="">
+                                    <form action="send-email.php" method="post">
                                         <div class="form-row align-items-center mt-2 mb-2">
                                             <div class="form-group col">
                                                 <label for="name" class="col-form-label">Name</label>
                                                 <input type="text" name="name" id="name" class="form-control">
                                                 <label for="email" class="col-form-label">e-mail</label>
-                                                <input type="text" name="email" id="email" class="form-control">
+                                                <input type="email" name="email" id="email" class="form-control">
+                                                <label for="subject" class="col-form-label">Subject</label>
+                                                <input type="text" name="subject" id="subject" class="form-control">
                                                 <label for="message" class="col-form-label">Message</label>
                                                 <textarea class="form-control" rows="5" id="message" name="message"></textarea>
                                             </div>
