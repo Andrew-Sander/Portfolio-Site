@@ -27,8 +27,16 @@ $mail->setFrom($email, $name);
 $mail->addAddress("andrsand1@gmail.com", "Andrew");
 
 $mail->Subject = $subject;
-$mail->Body = $message;
+$mail->Body = "Email: " . $email . "\n" . $message;
 
 $mail->send();
 
-echo "email sent";
+if ($mail->send()) {
+    // Redirect to a thank you page on success
+    header("Location: thankyou.html");
+    exit;
+} else {
+    // Handle the case where the email wasn't sent successfully
+    echo "Email could not be sent.";
+}
+?>
