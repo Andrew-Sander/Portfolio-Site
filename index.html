@@ -18,7 +18,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="collapse navbar-collapse " id="collapsibleNavbar">
                         <ul class="navbar-nav">
                             <li class="nav-item fs-3">
                                 <a class="nav-link" href="index.html">Projects</a>
@@ -35,36 +35,81 @@
             </nav>
         </header>
         <main>
-            <div class="d-flex justify-content-center">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Travel Agency Website</h4>
-                        <img class="card-img-top" src="images/Screenshot 2023-09-20 at 10.30.53 PM.png" alt="web design">
-                        <p class="p-2">A website for a travel agency my team of four developed. We used ASP.NET core and Entity Framework. It uses a SQL server database. Feel free to test it out, register an account, and see an existing account with bookings by logging in using Username: 'gbiers' and Password: 'password'.</p>
-                        <a href="http://travelexpertsworkshop5-dev.eba-peja3inp.us-east-1.elasticbeanstalk.com/" target="_blank" class="btn btn-dark">Full project</a>
+            <div class="row g-0">
+                <div class="col-lg-4">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Travel Agency Website</h4>
+                            <img class="card-img-top" src="images/Screenshot 2023-09-20 at 10.30.53 PM.png" alt="web design">
+                            <p class="p-2">A website to provide a travel agency with an online presence and show customers their information. Made with ASP.NET core, Entity Framework core, and SQL server. To see an existing account with bookings, log in using Username: 'gbiers' and Password: 'password'. <br><br> Developed by Shuo Xiang, Jade Bayot, <a href="http://www.linkedin.com/in/osaidmasood" target="_blank">Osaid Masood</a> and myself. </p>
+                            <a href="http://travelexpertsworkshop5-dev.eba-peja3inp.us-east-1.elasticbeanstalk.com/" target="_blank" class="btn btn-dark">See the full project</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="card mt-5">
-                    <div class="card-body">
-                        <h4 class="card-title">Project 2</h4>
-                        <img class="card-img-top" src="images/web-design.jpg" alt="web design">
-                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsum ipsam nihil dicta molestiae nemo.</p>
-                        <a href="" class="btn btn-dark">Full project</a>
+                <div class="col-lg-4">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h4 class="card-title">JavaFX Agent editor</h4>
+                            <img class="card-img-top" src="images/Screenshot 2023-09-21 172229.png" alt="Java program">
+                            <p class="p-2">A Java program that performs CRUD operations with a SQL server database using JDBC.</p>
+                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">See more</button>
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                              
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Agent Editor</h4>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                              
+                                    <div class="modal-body">
+                                        <div id="demo" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                            </div>
+                                        
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/Screenshot 2023-09-17 145829.png" alt="choosing agent" class="d-block w-100">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/Screenshot 2023-09-21 172250.png" alt="view info" class="d-block w-100">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/Screenshot 2023-09-21 172312.png" alt="edit agent" class="d-block w-100">
+                                                </div>
+                                            </div>
+                                        
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"></button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"></button>
+                                        </div>
+                                        <p>The app lets users select from a list of agents taken from a database and edit their information. When the edit button is pressed the text fields become editable and when save is clicked the database is updated with information from the fields. Delete will remove that agent from the database. I used IntelliJ IDEA, Scenebuilder, and SSMS</p>
+                                    </div>
+                              
+                                    
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                              
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="card mt-5 mb-5">
-                    <div class="card-body">
-                        <h4 class="card-title">Project 3</h4>
-                        <img class="card-img-top" src="images/web-design.jpg" alt="web design">
-                        <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsum ipsam nihil dicta molestiae nemo.</p>
-                        <a href="" class="btn btn-dark">Full project</a>
+                <div class="col-lg-4">
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h4 class="card-title">Project 3</h4>
+                            <img class="card-img-top" src="images/Screenshot 2023-09-21 at 6.03.15 PM.png" alt="react blog">
+                            <p class="p-2">A blog web-app made with React, Node.js and PostgreSQL.</p>
+                            <a href="" class="btn btn-dark">TBD</a>
+                        </div>
                     </div>
                 </div>
-            </div>                                                   
+            </div>                                                 
         </main>
         <footer>
             <p style="text-align: center;">&copy; Andrew Sander 2023</p>

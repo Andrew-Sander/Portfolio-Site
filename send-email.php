@@ -29,14 +29,12 @@ $mail->addAddress("andrsand1@gmail.com", "Andrew");
 $mail->Subject = $subject;
 $mail->Body = "Email: " . $email . "\n" . $message;
 
-$mail->send();
-
-if ($mail->send()) {
-    // Redirect to a thank you page on success
+try {
+    $mail->send();
     header("Location: thankyou.html");
     exit;
-} else {
-    // Handle the case where the email wasn't sent successfully
-    echo "Email could not be sent.";
+} catch (Exception $e) {
+    echo "Email could not be sent. Error: {$mail->ErrorInfo}";
 }
+
 ?>

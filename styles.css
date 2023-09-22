@@ -15,16 +15,22 @@ article {
 }
 
 .card {
-    width: 70%; 
-    max-width: 800px;
+    width: 90%;
 }
 
 main {
     position: relative;
     top: 80px;
+    width: 98%;
 }
 .socials {
     max-height: 30px;
     padding-right: 10px;
     float: right;
+}
+a {
+    color: slategray;
+}
+a:hover {
+    color: black;
 }
